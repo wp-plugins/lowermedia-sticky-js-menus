@@ -2,9 +2,11 @@
 #
 #
 #   This script recieves a parameter (the active theme's themename) from lowermedia-sticky-js-menus.php,
-#   it uses this parameter to decide which div to put the sticky wrapper around.  The .sticky function
-#   is defined in jquery.sticky.js.  This script also adds two classes to the body for debuging/testing
-#   and/or styling if needed
+#   it uses this parameter to decide which div to put the sticky wrapper around.
+#
+#   The .sticky function is defined in jquery.sticky.js.
+#
+#   This script also adds two classes to the body for debuging/testing and/or styling if needed
 #
 #
 */
@@ -56,6 +58,14 @@ jQuery(document).ready(function(){
   else if (LMScriptParams.themename=='spun')
     {
       jQuery(".site-navigation").sticky({ topSpacing: 0 });//spun
+    }
+  else if (LMScriptParams.themename=='Isabelle')
+    {
+      jQuery(".nav").sticky({ topSpacing: 0 });//spun
+    }
+  else if (LMScriptParams.themename=='spacious')
+    {
+      jQuery("#header-text-nav-container").sticky({ topSpacing: 0 });//spun
     }
   else if (LMScriptParams.themename=='lowermedia_one_page_theme' || LMScriptParams.themename=='expound' || LMScriptParams.themename=='sixteen' || LMScriptParams.themename=='bushwick' || LMScriptParams.themename=='twentytwelve')
     {
