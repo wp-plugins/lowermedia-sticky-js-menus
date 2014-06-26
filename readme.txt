@@ -4,7 +4,7 @@ Donate link: http://lowermedia.net/
 Tags: js, sticky.js, multisite, navigation
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: 2.0.3
+Stable tag: 3.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,14 +29,14 @@ This plugin uses the <a href='http://stickyjs.com'>Sticky.js</a> script, props a
 
 More info:
 
-This plugin was designed to work out of the box with a large number of popular themes if not all
+This plugin is designed to work out of the box with a large number of popular themes if not all
 the menu container and then manipulating the HTML tag w/ said class by way of JS
 
 Plugins tested to work with this theme work a tad bit differently.  Instead of 
 adding a class it uses custom js files that have the main navigational selectors 
 already defined.  JS manipulates the menus by using the already defined tags. 
 
-This plugin has been tested on a growing number of themes including: (will, in most cases, work on themes other than the following as well)
+This plugin has been tested on a growing number of themes including: (will work with all themes with slight settings configuration)
    twentythirteen, 
    twentytwelve, 
    twentyeleven, 
@@ -64,6 +64,31 @@ e.g.
 1. Upload `LowerMedia_sticky-js-menus.zip` in the wordpress dashboard upload plugin section or unzip the file and upload the directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Make sure you have a menu defined under appearance -> menus
+
+
+Popular Themes Default Target List:
+
+   attitude = #access
+   bushwick = #site-navigation
+   destro = #menu
+   expound = #site-navigation
+   Isabelle = .nav
+   lowermedia_one_page_theme
+   neuro = #navigation_menu
+   one-page = .header_wrapper
+   required-foundation = #access
+   responsive = main-nav
+   spacious = #header-text-nav-container
+   sixteen = #site-navigation
+   spun = .site-navigation
+   Swtor_NeozOne_Wp = art-nav
+   twentythirteen = #navbar
+   twentytwelve = #site-navigation
+   twentyeleven = nav#access
+   twentyten = #access
+   virtue = #topbar
+   wp-foundation = .top-nav
+
 
 == Frequently Asked Questions ==
 
@@ -108,6 +133,16 @@ Some theme styles or template styles may have overwritten the default styles, th
 = 2.0.3 =
 *Add improvements for Isabella and Spacious theme
 *Documentation
+
+= 3.0.0 =
+*WILL NOW SUPPORT ALL THEMES WITH MINOR SETTINGS CONFIGURATION
+*SECURITY UPDATE: Block direct access to php file
+*FEATURE: Admin options area
+*FEATURE: Now works without setting primary menu
+*FEATURE: Option to set target div or nav (by class or id) to designate sticky.js target
+*FEATURE: Option to disable stickyness at certain body width (hide on mobile)
+*FEATURE: Option to target additional html tag (div, nav, header, etc) by class or id
+
 
 == Upgrade Notice ==
 
