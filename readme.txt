@@ -1,20 +1,18 @@
-=== LowerMedia Sticky.js Menu's ===
+=== LowerMedia Sticky.js Menus ===
 Contributors: hawkeye126
 Donate link: http://lowermedia.net/
-Tags: js, sticky.js, multisite, navigation
+Tags: js, sticky.js, multisite, navigation, headers, jquery, menu
 Requires at least: 3.0.1
-Tested up to: 3.9.1
-Stable tag: 3.0.0
+Tested up to: 4.1
+Stable tag: 3.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WordPress plugin that integrates sticky.js and makes your primary navigation menu sticky 
-(will 'stick' to top of screen when rolled over).
+Sticky Headers, Menus, Widgets, Anything!  WordPress plugin that integrates sticky.js and makes your primary navigation menu and/or header sticky (will 'stick' to top of screen when rolled over).  You can actually make html object sticky via plugin settings!
 
 == Description ==
 
-WordPress plugin that integrates sticky.js and makes your primary navigation menu sticky 
-(will 'stick' to top of screen when rolled over).  
+Sticky Headers, Menus, Widgets, Anything!  WordPress plugin that integrates sticky.js and makes your primary navigation menu and/or header sticky (will 'stick' to top of screen when rolled over).  You can actually make html object sticky via plugin settings! 
 
 Activate and make your primary menu sticky!  
 Sticky means having your navigation always visible, the nav fixes itself to the top of the page.  
@@ -37,6 +35,7 @@ adding a class it uses custom js files that have the main navigational selectors
 already defined.  JS manipulates the menus by using the already defined tags. 
 
 This plugin has been tested on a growing number of themes including: (will work with all themes with slight settings configuration)
+   twentyfourteen,
    twentythirteen, 
    twentytwelve, 
    twentyeleven, 
@@ -61,7 +60,7 @@ This section describes how to install the plugin and get it working.
 
 e.g.
 
-1. Upload `LowerMedia_sticky-js-menus.zip` in the wordpress dashboard upload plugin section or unzip the file and upload the directory to the `/wp-content/plugins/` directory
+1. Upload `LowerMedia_sticky-js-menus.zip` in the WordPress dashboard upload plugin section or unzip the file and upload the directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Make sure you have a menu defined under appearance -> menus
 
@@ -91,6 +90,10 @@ Popular Themes Default Target List:
 
 
 == Frequently Asked Questions ==
+
+= Can I make Widgets sticky? =
+
+Yes, you can make anything sticky! Set the widget's (or whatever else's) ID or Class in the primary or additional sticky object box setting on the under Settings -> Sticky.js Menus
 
 = I am using one of the themes this plugin was tested to work on but it's not working. =
 
@@ -136,13 +139,19 @@ Some theme styles or template styles may have overwritten the default styles, th
 
 = 3.0.0 =
 *WILL NOW SUPPORT ALL THEMES WITH MINOR SETTINGS CONFIGURATION
-*SECURITY UPDATE: Block direct access to php file
+*SECURITY UPDATE: Block direct access to PHP file
 *FEATURE: Admin options area
 *FEATURE: Now works without setting primary menu
 *FEATURE: Option to set target div or nav (by class or id) to designate sticky.js target
 *FEATURE: Option to disable stickyness at certain body width (hide on mobile)
-*FEATURE: Option to target additional html tag (div, nav, header, etc) by class or id
+*FEATURE: Option to target additional HTML tag (div, nav, header, etc) by class or id
 
+= 3.1.0 =
+*Namespacing with Classes
+*PHP/JS code optimization
+*Move all JS to one file, and out of js directory
+*Reduce requests by 1
+*Minify JS
 
 == Upgrade Notice ==
 
